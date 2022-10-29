@@ -1,4 +1,6 @@
 import Head from 'next/head'
+import {BsFillMoonFill} from 'react-icons/bs';
+import { BsFillAlarmFill } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -9,8 +11,18 @@ export default function Home() {
         <link rel="icon" href="/webfavicon.ico" />
       </Head>
 
-      <main>
-        <div className='bg'></div>
+      <main className='bg-white px-10'>
+        <div className='min-h-screen'>
+          <nav className='py-10 mb-12 flex justify-between'>
+            <h1 className='text-xl font-sans'>Botshelo T</h1>
+            <ul className='flex items-center'>
+              <li>
+                <BsFillMoonFill className='cursor-pointer text-2xl'/>
+              </li>
+              <li><a href='#' className='bg-lime-500 px-3 py-1 rounded-md text-white ml-8'>My CV</a></li>
+            </ul>
+          </nav>
+        </div>
       </main>
 
     </div>
