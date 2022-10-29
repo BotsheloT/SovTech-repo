@@ -1,6 +1,8 @@
 import Head from 'next/head'
+import { icons } from 'react-icons';
 import {BsFillMoonFill} from 'react-icons/bs';
-import { BsFillAlarmFill } from "react-icons/bs";
+import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
+import {SiLeetcode, } from "react-icons/si"
 
 export default function Home() {
   return (
@@ -13,15 +15,32 @@ export default function Home() {
 
       <main className='bg-white px-10'>
         <div className='min-h-screen'>
-          <nav className='py-10 mb-12 flex justify-between'>
-            <h1 className='text-xl font-sans'>Botshelo T</h1>
+
+          <nav className='py-10 mb-10 flex justify-between'>
+            <h1 className='text-xl font-sans font-semibold font'>Botshelo T</h1>
             <ul className='flex items-center'>
-              <li>
-                <BsFillMoonFill className='cursor-pointer text-2xl'/>
-              </li>
-              <li><a href='#' className='bg-lime-500 px-3 py-1 rounded-md text-white ml-8'>My CV</a></li>
+              <li> <BsFillMoonFill className='cursor-pointer text-2xl'/> </li>
+              <li> <a href='#' className='bg-lime-500 px-3 py-1 rounded-md text-white ml-8'>My CV</a> </li>
             </ul>
           </nav>
+
+          <div className='text-center p-10'>
+            <h2 className='text-5xl font-medium text-lime-500'>Botshelo Tlhabanyane</h2>
+            <h3 className='font-medium text-2xl'>Software Developer</h3>
+            <br/>
+            <p className='text-lg text-gray-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua. Tempor
+            nec feugiat nisl pretium fusce id velit. Lobortis mattis aliquam.
+            </p>
+          </div>
+
+          <div className='text-4xl text-gray-500'>
+            <ul className='flex justify-center gap-9'>
+              <li> <a href='https://github.com/BotsheloT' target={'_blank'}><AiFillGithub/></a></li>
+              <li> <a href='https://leetcode.com/BotsheloT/' target={'_blank'}><SiLeetcode/></a> </li>
+              <li> <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'}><AiFillLinkedin/></a></li>              
+            </ul>
+          </div>
         </div>
       </main>
 
