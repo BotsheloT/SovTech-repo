@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { icons } from 'react-icons';
 import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai"
 import {SiLeetcode, } from "react-icons/si"
@@ -13,19 +12,19 @@ export default function Home() {
         <link rel="icon" href="/webfavicon.ico" />
       </Head>
 
-      <main className='bg-white px-10'>
-        <div className='min-h-screen'>
+      <main className='bg-white'>
+        <section className='min-h-screen px-10'>
 
-          <nav className='py-10 mb-10 flex justify-between'>
+          <nav className='pt-10 mb-3 flex justify-between'>
             <h1 className='text-xl font-sans font-semibold font'>Botshelo T</h1>
             <ul className='flex items-center'>
               <li> <BsFillMoonFill className='cursor-pointer text-2xl'/> </li>
-              <li> <a href='#' className='bg-lime-500 px-3 py-1 rounded-md text-white ml-8'>My CV</a> </li>
+              <li> <a href='#' className='bg-blue-500 px-3 py-1 rounded-md text-white ml-8'>My CV</a> </li>
             </ul>
           </nav>
 
           <div className='text-center p-10'>
-            <h2 className='text-5xl font-medium text-lime-500'>Botshelo Tlhabanyane</h2>
+            <h2 className='text-5xl font-medium text-blue-500'>Botshelo Tlhabanyane</h2>
             <h3 className='font-medium text-2xl'>Software Developer</h3>
             <br/>
             <p className='text-lg text-gray-700'>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
@@ -35,13 +34,45 @@ export default function Home() {
           </div>
 
           <div className='text-4xl text-gray-500'>
-            <ul className='flex justify-center gap-9'>
-              <li> <a href='https://github.com/BotsheloT' target={'_blank'}><AiFillGithub/></a></li>
-              <li> <a href='https://leetcode.com/BotsheloT/' target={'_blank'}><SiLeetcode/></a> </li>
-              <li> <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'}><AiFillLinkedin/></a></li>              
+            <ul className='flex justify-center gap-9 hover'>
+              <li className='hover:text-black'> <a href='https://github.com/BotsheloT' target={'_blank'}><AiFillGithub/></a></li>
+              <li className='hover:text-black'> <a href='https://leetcode.com/BotsheloT/' target={'_blank'}><SiLeetcode/></a> </li>
+              <li className='hover:text-black'> <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'}><AiFillLinkedin/></a></li>              
             </ul>
           </div>
+
+          <div className='relative mx-auto bg-gradient-to-b from-blue-500 w-80 h-80 rounded-full mt-5'>
+            
+          </div>
+        </section>
+
+      <section className='px-10'>
+
+        <div className='text-center'>
+          <h3 className=' font-medium text-2xl'>Skills</h3>
         </div>
+
+        <div className='text-center'>
+          <h3 className='font-medium text-2xl'>Contact Me</h3>
+        </div>        
+
+        
+      </section>
+
+      <section>        
+        <footer className='w-full h-96 bg-blue-500 px-0'>
+          <h1 className='text-xl text-white pt-10 pb-1  px-10 font-medium'>Botshelo T</h1>
+          <h2 className='text-base text-white pb-10 px-10 font-normal'>Software Developer</h2>
+
+          <ul className='text-white flex px10 gap-10 text-3xl'>
+            <li className='hover:text-gray-300 pl-10'><a href='https://github.com/BotsheloT' target={'_blank'}><AiFillGithub/></a></li>
+            <li className='hover:text-gray-300'><a href='https://leetcode.com/BotsheloT/' target={'_blank'}><SiLeetcode/></a></li>
+            <li className='hover:text-gray-300'><a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'}><AiFillLinkedin/></a></li>
+          </ul>
+        </footer>
+      </section>
+      
+      
       </main>
 
     </div>
