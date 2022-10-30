@@ -21,7 +21,7 @@ export default function Home() {
             <h1 className='text-xl font-sans font-semibold font'>Botshelo T</h1>
             <ul className='flex items-center'>
               <li> <BsFillMoonFill className='cursor-pointer text-2xl'/> </li>
-              <li> <a href='#' className='bg-blue-500 px-3 py-1 rounded-md text-white ml-8'>My CV</a> </li>
+              <li> <a href='#' className='bg-blue-500 px-3 py-1 rounded-md text-white ml-8 font-medium'>My CV</a> </li>
             </ul>
           </nav>
 
@@ -59,32 +59,42 @@ export default function Home() {
 
         <div className='text-center py-10'>
           <h3 className=' font-medium text-2xl'>Skills</h3>
-
-          <div className='pt-10 flex justify-between'>
-            <MdOutlineWebAsset className='text-4xl text-blue-500'/>
-            <h2>Frontend</h2>
-            <RiArrowDropDownLine className='pt-2'/>
-          </div>
         </div>
 
-        <div className='text-center py-10'>
-          <h3 className='font-medium text-2xl'>Contact Me</h3>
+        <div className='m-auto items-center text-center py-10'>
+          <h3 className='font-medium text-2xl pb-4'>Contact Me</h3>
+
+          <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
+            <input type={'text'} placeholder = 'Name' className='bg-gray-200 w-72 h-8 rounded-md mb-5 placeholder: pl-2' required/>
+            <br/>
+            <input type={'email'} placeholder = 'Email Address' className='bg-gray-200 w-72 h-8 rounded-md mb-5 placeholder: pl-2' required/>
+            <br/>
+            <textarea type={'text'} placeholder = 'Message' className='bg-gray-200 w-72 h-40 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
+            <br/>
+            <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-72'> Send Message </button>
+          </form>
+          
         </div>        
 
         
       </section>
 
-      <section>        
-        <footer className='w-full h-96 bg-blue-500 px-0'>
-          <h1 className='text-xl text-white pt-10 pb-1  px-10 font-medium'>Botshelo T</h1>
-          <h2 className='text-base text-white pb-10 px-10 font-normal'>Software Developer</h2>
+      <section className=''>
 
-          <ul className='text-white flex px10 gap-10 text-3xl'>
-            <li className='hover:text-gray-300 pl-10'><a href='https://github.com/BotsheloT' target={'_blank'}><AiFillGithub/></a></li>
-            <li className='hover:text-gray-300'><a href='https://leetcode.com/BotsheloT/' target={'_blank'}><SiLeetcode/></a></li>
-            <li className='hover:text-gray-300'><a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'}><AiFillLinkedin/></a></li>
-          </ul>
+        <footer className='w-full h-72 bg-blue-500 px10 items-center text-center'>
+          <h1 className='text-xl text-white pt-10 pb-1 font-medium'>Botshelo T</h1>
+          <h2 className='text-base text-white pb-10 font-normal'>Software Developer</h2>
+
+          <a href='#' className='border-solid rounded-md border-white text-white mb-10 w-20 h-10'>Download CV</a>
+          
+          <div className='text-white flex justify-center gap-10 text-4xl py-10'>
+          <a href='https://github.com/BotsheloT' target={'_blank'} className= "hover:text-gray-300"><AiFillGithub/></a>
+          <a href='https://leetcode.com/BotsheloT/' target={'_blank'} className= "hover:text-gray-300"><SiLeetcode/></a>
+          <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'} className= "hover:text-gray-300"><AiFillLinkedin/></a>
+          </div>          
+                    
         </footer>
+
       </section>
       
       
