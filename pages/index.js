@@ -1,4 +1,5 @@
 import Head from 'next/head';
+import Accordion from "../Components/Accordion";
 import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import {SiLeetcode, } from "react-icons/si";
@@ -29,9 +30,11 @@ export default function Home() {
             <h2 className='text-5xl font-medium text-blue-500'>Botshelo Tlhabanyane</h2>
             <h3 className='font-medium text-2xl'>Software Developer</h3>
             <br/>
-            <p className='text-lg text-gray-700'>Ambitious career-focused Computer Science Student based in Johannesburg.<br/> Frontend Developement is what
-            interests me the most. I also dable in Backend Developement.
-            </p>
+            <div className='text-lg text-gray-700'>
+              <p>Ambitious career-focused Computer Science Student based in Johannesburg.</p>
+              <p>Frontend Developement is what interests me the most. I also dabble in Backend Developement.</p>
+            </div>
+                        
           </div>
 
           <div className='text-4xl text-gray-500'>
@@ -46,12 +49,27 @@ export default function Home() {
             
           </div>
 
-          <div className='text-center py-10'>
-          <h3 className=' font-medium text-2xl'>Why SovTech?</h3>
-          <p className='text-lg text-gray-700'>Ever since I was introduced to SovTech, my interest for the company has grown.<br/>
-          Through SovTech's Social Media, I have witnessed how seriously they take technology and its potential.<br/> 
-          I truly believe that with working at SovTech, I will be surrounded by like-minded and driven people.
-            </p>
+          <div className='py-10 text-center'>
+            <h3 className='font-medium text-2xl'>About Me</h3>
+            <p></p>
+
+          </div>
+
+          <div className='py-10 text-center'>
+          <h3 className=' font-medium text-2xl pb-3'>Why SovTech?</h3>
+
+          <div className='text-lg text-gray-700'>
+            <p>Ever since I was introduced to SovTech, my interest for the company has grown.
+            Through SovTech's Social Media, I have witnessed how seriously they take technology and its potential.
+            
+            I truly believe that with working at SovTech, I will be surrounded by like-minded developers who will allow me to advance in the IT fraternity of SovTech.</p>
+            <br/>
+            <p>The inclusive and innovative nature of SovTech makes it the perfect environment for me to showcase and expand my knowledge
+              of JavaScript, React, Swift, and other technologies that interest me. With my creative mind, desire for growth and discipline,
+              I am positive that I will be a valuable employee at SovTech.              
+            </p>            
+          </div>
+                      
         </div>
         </section>
 
@@ -59,19 +77,21 @@ export default function Home() {
 
         <div className='text-center py-10'>
           <h3 className=' font-medium text-2xl'>Skills</h3>
+
+          <Accordion/>
         </div>
 
         <div className='m-auto items-center text-center py-10'>
           <h3 className='font-medium text-2xl pb-4'>Contact Me</h3>
 
           <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
-            <input type={'text'} placeholder = 'Name' className='bg-gray-200 w-72 h-8 rounded-md mb-5 placeholder: pl-2' required/>
+            <input type={'text'} placeholder = 'Name' className='bg-gray-200 w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
             <br/>
-            <input type={'email'} placeholder = 'Email Address' className='bg-gray-200 w-72 h-8 rounded-md mb-5 placeholder: pl-2' required/>
+            <input type={'email'} placeholder = 'Email Address' className='bg-gray-200 w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
             <br/>
-            <textarea type={'text'} placeholder = 'Message' className='bg-gray-200 w-72 h-40 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
+            <textarea type={'text'} placeholder = 'Message' className='bg-gray-200 w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
             <br/>
-            <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-72'> Send Message </button>
+            <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
           </form>
           
         </div>        
