@@ -1,10 +1,27 @@
 import Head from 'next/head';
+import { useRef } from 'react';
+import emailjs from '@emailjs/browser'
 import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import {SiLeetcode, } from "react-icons/si";
 import{MdEmail, MdOutlinePhoneAndroid} from "react-icons/md";
 
 export default function Home() {
+  const form = useRef();
+
+  const sendEmail = (e) => {
+    e.preventDefault();
+
+
+    emailjs.sendForm('service_gflnnfz', 'template_y8e8qxf', form.current, 'qiTtlWWdhV7BKXMon')
+    .then((result) => {
+        console.log(result.text);
+        alert("Message Sent");
+    }, (error) => {
+        console.log(error.text);
+    });
+};
+
   return (
     <div>
       <Head>
@@ -145,39 +162,23 @@ export default function Home() {
   </div>
 
         </div>
-
-        <div className='m-auto text-center py-10'>
-          <div className='w-auto h-auto bg-gray-200 rounded-lg bg-center'>
+        
+          <div className='w-auto h-auto bg-gray-200 rounded-lg bg-center text-center place-content-center'>
             <h3 className='font-medium text-2xl pb-4 py-5'>Contact Me</h3>
 
-            <div className='grid grid-cols-2 gap-5'>
+            <div>
               <div className='text-left px-20'>
-                <div>
-                  <h3 className='text-xl font-medium'>Phone</h3>
-                  <p className='text-gray-400'>081 871 5286</p>
-                  <MdOutlinePhoneAndroid className='text-3xl text-blue-500'/>
-                </div>
-
-                <div>
-                  <h3 className='text-xl font-medium'>Email</h3>
-                  <p className='text-gray-400'>botshelotlhabanyane@gmail.com</p>
-                  <MdEmail className='text-3xl text-blue-500'/>
-                </div>
-              
-              
-              </div>
-
-              <div>
-                <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
-                <input type={'text'} placeholder = 'Name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
+            
+                <form ref={form} onSubmit={sendEmail} className='pb-10'>
+                <input type={'text'} placeholder = 'Name' name='user_name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
                 <br/>
-                <input type={'email'} placeholder = 'Email Address' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
+                <input type={'email'} placeholder = 'Email Address' name='user_email' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
                 <br/>
-                <textarea type={'text'} placeholder = 'Message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
+                <textarea type={'text'} placeholder = 'Message' name='message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
                 <br/>
-                <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
+                <button type="submit"  value={"Send"}  className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
                 </form>
-              </div>
+                
             </div>
             
           </div>          
