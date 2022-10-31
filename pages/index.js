@@ -50,8 +50,15 @@ export default function Home() {
           </div>
 
           <div className='py-10 text-center'>
-            <h3 className='font-medium text-2xl'>About Me</h3>
-            <p></p>
+            <h3 className='font-medium text-2xl pb-3'>About Me</h3>
+            <div className='text-lg text-gray-700'>
+              <p>Design and my sense of aesthetics are reflected in all areas of my daily life.</p> 
+              <p>At the begining of my second year in Varsity, I was not too sure what I wanted to do with my degree.</p>       
+              <p>I knew that I enoyed coding, but I was not sure which IT position would acomodate my creativity.</p>
+              <br/>
+              <p></p>
+            </div>
+            
 
           </div>
 
@@ -60,8 +67,7 @@ export default function Home() {
 
           <div className='text-lg text-gray-700'>
             <p>Ever since I was introduced to SovTech, my interest for the company has grown.
-            Through SovTech's Social Media, I have witnessed how seriously they take technology and its potential.
-            
+            Through SovTech's Social Media, I have witnessed how seriously they take technology and its potential.            
             I truly believe that with working at SovTech, I will be surrounded by like-minded developers who will allow me to advance in the IT fraternity of SovTech.</p>
             <br/>
             <p>The inclusive and innovative nature of SovTech makes it the perfect environment for me to showcase and expand my knowledge
