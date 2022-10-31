@@ -1,9 +1,7 @@
 import Head from 'next/head';
-import Accordion from "../Components/Accordion";
 import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import {SiLeetcode, } from "react-icons/si";
-import{RiArrowDropDownLine, RiArrowDropUpLine} from "react-icons/ri";
 import{MdOutlineWebAsset} from "react-icons/md";
 
 export default function Home() {
@@ -52,11 +50,14 @@ export default function Home() {
           <div className='py-10 text-center'>
             <h3 className='font-medium text-2xl pb-3'>About Me</h3>
             <div className='text-lg text-gray-700'>
-              <p>Design and my sense of aesthetics are reflected in all areas of my daily life.</p> 
-              <p>At the begining of my second year in Varsity, I was not too sure what I wanted to do with my degree.</p>       
-              <p>I knew that I enoyed coding, but I was not sure which IT position would acomodate my creativity.</p>
-              <br/>
+              <p>Design and my sense of aesthetics are reflected in all areas of my daily life.</p>
+              <p>I personally believe that everyone has a unique characteristic to them and that it can only be</p>
               <p></p>
+              <br/>
+              <p>At the begining of my second year in Varsity, I was not too sure what I wanted to do with my degree. I knew that I enjoyed</p>       
+              <p> coding, but I was not sure which IT position would accommodate my creativity. In March that year, I took part in a Hackathon </p>
+              <p>with my friends that opened my perspective. We designed a website that made accommodations for at-home-voters using React.</p>
+              <p>Even though our team did not win, that experience ignited the love and interest I have for Javascript Frameworks and Design today</p>              
             </div>
             
 
@@ -68,7 +69,7 @@ export default function Home() {
           <div className='text-lg text-gray-700'>
             <p>Ever since I was introduced to SovTech, my interest for the company has grown.
             Through SovTech's Social Media, I have witnessed how seriously they take technology and its potential.            
-            I truly believe that with working at SovTech, I will be surrounded by like-minded developers who will allow me to advance in the IT fraternity of SovTech.</p>
+            I truly believe that with working at SovTech, I will be surrounded by like-minded developers who will allow me to advance in the IT fraternity of SovTech.</p>            
             <br/>
             <p>The inclusive and innovative nature of SovTech makes it the perfect environment for me to showcase and expand my knowledge
               of JavaScript, React, Swift, and other technologies that interest me. With my creative mind, desire for growth and discipline,
@@ -84,21 +85,81 @@ export default function Home() {
         <div className='text-center py-10'>
           <h3 className=' font-medium text-2xl'>Skills</h3>
 
-          <Accordion/>
+          
+
+  <div id="accordion-collapse" data-accordion="open">
+
+    <h2 id="accordion-collapse-heading-1">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-t-xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 bg-gray-100 text-black text-lg" data-accordion-target="#accordion-collapse-body-1" aria-expanded="true" aria-controls="accordion-collapse-body-1">
+        <span>Frontend</span>
+        <svg data-accordion-icon="" class="w-6 h-6 rotate-180 shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-1" class="" aria-labelledby="accordion-collapse-heading-1">
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">HTML</p>          
+      </div>
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">CSS</p>  
+      </div>
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">ReactJS</p>      
+      </div>
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Angular</p>      
+      </div>
+    </div>
+
+    <h2 id="accordion-collapse-heading-2">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 bg-gray-100 text-black text-lg" data-accordion-target="#accordion-collapse-body-2" aria-expanded="false" aria-controls="accordion-collapse-body-2">
+        <span>Backend</span>
+        <svg data-accordion-icon="" class="w-6 h-6 shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">NodeJS</p>      
+      </div>
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">MongoDB</p>      
+      </div>
+      <div class="p-5 font-light border border-b-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">FireBase</p>      
+      </div>
+    </div>
+    
+    <h2 id="accordion-collapse-heading-3">
+      <button type="button" class="flex items-center justify-between w-full p-5 font-medium text-left border border-b-0 border-gray-200 rounded-b-xl focus:ring-4 focus:ring-gray-200 hover:bg-gray-100 bg-gray-100 text-black text-lg" data-accordion-target="#accordion-collapse-body-3" aria-expanded="false" aria-controls="accordion-collapse-body-3">
+        <span>Design</span>
+        <svg data-accordion-icon="" class="w-6 h-6 shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
+      </button>
+    </h2>
+    <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+      <div class="p-5 font-light border border-t-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Adobe XD</p>            
+      </div>
+      <div class="p-5 font-light border border-t-0 border-gray-200">
+        <p class="mb-2 text-gray-500 dark:text-gray-400">Adobe Illustrator</p>            
+      </div>
+    </div>
+  </div>
+
         </div>
 
-        <div className='m-auto items-center text-center py-10'>
-          <h3 className='font-medium text-2xl pb-4'>Contact Me</h3>
+        <div className='m-auto text-center py-10'>
+          <div className='w-auto h-auto bg-gray-200 rounded-lg bg-center'>
+            <h3 className='font-medium text-2xl pb-4 py-5'>Contact Me</h3>
 
-          <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
-            <input type={'text'} placeholder = 'Name' className='bg-gray-200 w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
-            <br/>
-            <input type={'email'} placeholder = 'Email Address' className='bg-gray-200 w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
-            <br/>
-            <textarea type={'text'} placeholder = 'Message' className='bg-gray-200 w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
-            <br/>
-            <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
-          </form>
+            <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
+              <input type={'text'} placeholder = 'Name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
+              <br/>
+              <input type={'email'} placeholder = 'Email Address' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
+              <br/>
+              <textarea type={'text'} placeholder = 'Message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
+              <br/>
+              <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
+            </form>
+          </div>          
           
         </div>        
 
