@@ -2,7 +2,7 @@ import Head from 'next/head';
 import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import {SiLeetcode, } from "react-icons/si";
-import{MdOutlineWebAsset} from "react-icons/md";
+import{MdEmail, MdOutlinePhoneAndroid} from "react-icons/md";
 
 export default function Home() {
   return (
@@ -150,15 +150,36 @@ export default function Home() {
           <div className='w-auto h-auto bg-gray-200 rounded-lg bg-center'>
             <h3 className='font-medium text-2xl pb-4 py-5'>Contact Me</h3>
 
-            <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
-              <input type={'text'} placeholder = 'Name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
-              <br/>
-              <input type={'email'} placeholder = 'Email Address' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
-              <br/>
-              <textarea type={'text'} placeholder = 'Message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
-              <br/>
-              <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
-            </form>
+            <div className='grid grid-cols-2 gap-5'>
+              <div className='text-left px-20'>
+                <div>
+                  <h3 className='text-xl font-medium'>Phone</h3>
+                  <p className='text-gray-400'>081 871 5286</p>
+                  <MdOutlinePhoneAndroid className='text-3xl text-blue-500'/>
+                </div>
+
+                <div>
+                  <h3 className='text-xl font-medium'>Email</h3>
+                  <p className='text-gray-400'>botshelotlhabanyane@gmail.com</p>
+                  <MdEmail className='text-3xl text-blue-500'/>
+                </div>
+              
+              
+              </div>
+
+              <div>
+                <form action = "https://formsubmit.co/botshelotlhabanyane@gmail.com" method ="POST" className='pb-10'>
+                <input type={'text'} placeholder = 'Name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
+                <br/>
+                <input type={'email'} placeholder = 'Email Address' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2' required/>
+                <br/>
+                <textarea type={'text'} placeholder = 'Message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1' required/>
+                <br/>
+                <button type="submit" className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
+                </form>
+              </div>
+            </div>
+            
           </div>          
           
         </div>        
