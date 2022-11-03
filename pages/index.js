@@ -12,19 +12,6 @@ export default function Home() {
 
   const form = useRef();
 
-  const sendEmail = (e) => {
-    e.preventDefault();
-
-
-    emailjs.sendForm('service_gflnnfz', 'template_y8e8qxf', form.current, 'qiTtlWWdhV7BKXMon')
-    .then((result) => {
-        console.log(result.text);
-        alert("Message Sent");
-    }, (error) => {
-        console.log(error.text);
-    });
-};
-
     const toggleHidden = e =>{
       e.preventDefault();
       const elem = document.getElementById('accordion-1');
@@ -186,10 +173,10 @@ export default function Home() {
             <div>
               <div className='flex flex-col justify-center items-center py-5'>
             
-                <form ref={form} onSubmit={sendEmail}>
-                <input type={'text'} placeholder = 'Name' name='user_name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
+                <form ref={form} method="POST" netlify>
+                <input type={'text'} placeholder = 'Name' name='name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
                 <br/>
-                <input type={'email'} placeholder = 'Email Address' name='user_email' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
+                <input type={'email'} placeholder = 'Email Address' name='email' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
                 <br/>
                 <textarea type={'text'} placeholder = 'Message' name='message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
                 <br/>
