@@ -68,7 +68,7 @@ export default function Home() {
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-blue-500 w-80 h-80 rounded-full mt-5 overflow-hidden'>
-          <Image src="/avatar.png" layout="fill" className='mx-auto h-80' alt="Avatar of me"/>
+          <img src="/avatar.png" layout="fill" className='mx-auto h-80' alt="Avatar of me"/>
           </div>
 
           <div className='py-10 text-center'>
