@@ -69,15 +69,12 @@ export default function Home() {
 
           <div className='py-10 text-center'>
             <h3 className='font-medium text-2xl pb-3 dark:text-white'>About Me</h3>
-            <div className='text-lg text-gray-700 dark:text-gray-300'>
-              <p>Design and my sense of aesthetics are reflected in all areas of my daily life.</p>
-              <p>I personally believe that everyone has a unique characteristic to them and that it can only be</p>
-              <p></p>
+            <div className='text-lg text-gray-700 dark:text-gray-300'>              
+              <p>I love beautiful things, outfits, people, photos, and digital products. I work every day to improve my craft in design, photography and web development.</p>
+              <p>To consistantly improve my skills, I have a list of technologies that I will be picking up on in the coming months so that I continue to grow.</p>
               <br/>
-              <p>At the begining of my second year in Varsity, I was not too sure what I wanted to do with my degree. I knew that I enjoyed</p>       
-              <p> coding, but I was not sure which IT position would accommodate my creativity. In March that year, I took part in a Hackathon </p>
-              <p>with my friends that opened my perspective. We designed a website that made accommodations for at-home-voters using React.</p>
-              <p>Even though our team did not win, that experience ignited the love and interest I have for Javascript Frameworks and Design today</p>              
+              <p>When not working, I enjoy photography, watching anime, spending time with my family, and going on long bike rides to think(mostly about pizza and donuts).</p>       
+                          
             </div>
             
 
@@ -113,7 +110,7 @@ export default function Home() {
               <svg data-accordion-icon="" class="w-6 h-6 shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
             </h2>
-            <div id="accordion-collapse-body-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
+            <div id="accordion-1" class="hidden" aria-labelledby="accordion-collapse-heading-1">
             <div class="p-5 font-light border border-b-0 border-gray-200">
               <p class="mb-2 text-gray-500 dark:text-gray-400">HTML</p>          
             </div>
@@ -134,7 +131,7 @@ export default function Home() {
             <svg data-accordion-icon="" class="w-6 h-6 shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
             </h2>
-            <div id="accordion-collapse-body-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
+            <div id="accordion-2" class="hidden" aria-labelledby="accordion-collapse-heading-2">
             <div class="p-5 font-light border border-b-0 border-gray-200">
             <p class="mb-2 text-gray-500 dark:text-gray-400">NodeJS</p>      
             </div>
@@ -152,7 +149,7 @@ export default function Home() {
             <svg data-accordion-icon="" class="w-6 h-6 shrink-0 text-blue-500" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill-rule="evenodd" d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z" clip-rule="evenodd"></path></svg>
             </button>
             </h2>
-            <div id="accordion-collapse-body-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
+            <div id="accordion-3" class="hidden" aria-labelledby="accordion-collapse-heading-3">
             <div class="p-5 font-light border border-t-0 border-gray-200">
             <p class="mb-2 text-gray-500 dark:text-gray-400">Adobe XD</p>            
             </div>
@@ -172,11 +169,11 @@ export default function Home() {
               <div className='flex flex-col justify-center items-center py-5'>
             
                 <form ref={form} onSubmit={sendEmail}>
-                <input type={'text'} placeholder = 'Name' name='user_name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100' required/>
+                <input type={'text'} placeholder = 'Name' name='user_name' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
                 <br/>
-                <input type={'email'} placeholder = 'Email Address' name='user_email' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100' required/>
+                <input type={'email'} placeholder = 'Email Address' name='user_email' className='bg-white w-96 h-9 rounded-md mb-5 placeholder: pl-2 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
                 <br/>
-                <textarea type={'text'} placeholder = 'Message' name='message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1 dark:bg-gray-400 dark:placeholder:text-gray-100' required/>
+                <textarea type={'text'} placeholder = 'Message' name='message' className='bg-white w-96 h-56 rounded-md mb-5 placeholder: pl-2 pt-1 dark:bg-gray-400 dark:placeholder:text-gray-100 dark:text-white' required/>
                 <br/>
                 <button type="submit"  value={"Send"}  className='bg-blue-500 px-3 py-1 rounded-md text-white text-lg font-medium w-96 h-9'> Send Message </button>
                 </form>
