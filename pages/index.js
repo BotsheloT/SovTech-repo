@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import { useRef, useEffect } from 'react';
-import emailjs from '@emailjs/browser'
 import {BsFillMoonFill} from 'react-icons/bs';
 import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import {SiLeetcode, } from "react-icons/si";
@@ -62,14 +61,14 @@ export default function Home() {
 
           <div className='text-4xl text-gray-500'>
             <ul className='flex justify-center gap-9 hover'>
-              <li className='hover:text-black dark:hover:text-white'> <a href='https://github.com/BotsheloT' target={'_blank'}><AiFillGithub/></a></li>
-              <li className='hover:text-black dark:hover:text-white'> <a href='https://leetcode.com/BotsheloT/' target={'_blank'}><SiLeetcode/></a> </li>
-              <li className='hover:text-black dark:hover:text-white'> <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'}><AiFillLinkedin/></a></li>              
+              <li className='hover:text-black dark:hover:text-white'> <a href='https://github.com/BotsheloT'><AiFillGithub/></a></li>
+              <li className='hover:text-black dark:hover:text-white'> <a href='https://leetcode.com/BotsheloT/'><SiLeetcode/></a> </li>
+              <li className='hover:text-black dark:hover:text-white'> <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/'><AiFillLinkedin/></a></li>              
             </ul>
           </div>
 
           <div className='relative mx-auto bg-gradient-to-b from-blue-500 w-80 h-80 rounded-full mt-5 overflow-hidden'>
-          <img src="/avatar.png" layout="fill" className='mx-auto h-80'/>
+          <Image src="/avatar.png" layout="fill" className='mx-auto h-80' alt="Avatar of me"/>
           </div>
 
           <div className='py-10 text-center'>
@@ -201,9 +200,9 @@ export default function Home() {
           <a href='docs/CV.pdf' className='border-solid rounded-md border-white text-white mb-10 w-20 h-10'>Download CV</a>
           
           <div className='text-white flex justify-center gap-10 text-4xl py-10'>
-          <a href='https://github.com/BotsheloT' target={'_blank'} className= "hover:text-gray-300"><AiFillGithub/></a>
-          <a href='https://leetcode.com/BotsheloT/' target={'_blank'} className= "hover:text-gray-300"><SiLeetcode/></a>
-          <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' target={'_blank'} className= "hover:text-gray-300"><AiFillLinkedin/></a>
+          <a href='https://github.com/BotsheloT' className= "hover:text-gray-300"><AiFillGithub/></a>
+          <a href='https://leetcode.com/BotsheloT/' className= "hover:text-gray-300"><SiLeetcode/></a>
+          <a href='https://www.linkedin.com/in/botshelo-tlhabanyane-36b573210/' className= "hover:text-gray-300"><AiFillLinkedin/></a>
           </div>          
                     
         </footer>
