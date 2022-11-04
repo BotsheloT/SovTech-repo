@@ -12,7 +12,7 @@
 ## Overview
 For this project, I designed a portfolio website with information about me and my reason for wanting to work at SovTech.
 The Website allows users to toggle to a Dark Mode, download my CV to get more information about my skills and education
-and send me a personal email. Open [https://] to see my work.
+and send me a personal email. Open [https://botshelot.github.io/SovTech-repo/] to see my work.
 
 ## Getting Started
 
