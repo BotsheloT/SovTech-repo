@@ -14,6 +14,46 @@ For this project, I designed a portfolio website with information about me and m
 The Website allows users to toggle to a Dark Mode, download my CV to get more information about my skills and education
 and send me a personal email. Open https://botshelot.github.io/SovTech-repo/ to see my work.
 
+Deployment was not fully successful with Vercel or Netflify, and GitHub Pages only shows the README. To see the application
+fully functional it has to be run locally with the installations and Getting started command.
+
+## Installations (for standard modern project)
+
+
+### React-Icons
+```bash
+yarn add react-icons
+# or
+npm install react-icons --save
+```
+
+### Tailwind
+
+Setting up Tailwind with cli is really simple, just install Tailwind:
+
+```sh
+npm install tailwindcss
+```
+
+Then add it to your PostCSS config (use a separate `postcss.config.js` file):
+
+```js
+module.exports = {
+  plugins: [
+    require('tailwindcss'),
+    require('autoprefixer'),
+  ]
+}
+```
+
+Next, create a CSS file for your Tailwind styles. We've stored in it `src/assets/tailwind.css` for this example:
+
+```css
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+```
+
 ## Getting Started
 
 First, run the development server:
