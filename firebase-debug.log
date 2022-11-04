@@ -1,0 +1,24 @@
+[debug] [2022-11-04T10:46:46.640Z] ----------------------------------------------------------------------
+[debug] [2022-11-04T10:46:46.642Z] Command:       /usr/local/bin/firebase /Users/botshelotlhabanyane/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/bin/firebase deploy
+[debug] [2022-11-04T10:46:46.643Z] CLI Version:   11.16.0
+[debug] [2022-11-04T10:46:46.643Z] Platform:      darwin
+[debug] [2022-11-04T10:46:46.643Z] Node Version:  v16.16.0
+[debug] [2022-11-04T10:46:46.646Z] Time:          Fri Nov 04 2022 12:46:46 GMT+0200 (South Africa Standard Time)
+[debug] [2022-11-04T10:46:46.647Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2022-11-04T10:46:46.810Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2022-11-04T10:46:46.812Z] > authorizing via signed-in user (botshelotlhabanyane@gmail.com)
+[debug] [2022-11-04T10:46:46.813Z] [iam] checking project my-portfolio-a8a6e for permissions ["firebase.projects.get","firebasehosting.sites.update"]
+[debug] [2022-11-04T10:46:46.817Z] >>> [apiv2][query] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-a8a6e:testIamPermissions [none]
+[debug] [2022-11-04T10:46:46.818Z] >>> [apiv2][(partial)header] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-a8a6e:testIamPermissions x-goog-quota-user=projects/my-portfolio-a8a6e
+[debug] [2022-11-04T10:46:46.820Z] >>> [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-a8a6e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-04T10:46:47.475Z] <<< [apiv2][status] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-a8a6e:testIamPermissions 200
+[debug] [2022-11-04T10:46:47.479Z] <<< [apiv2][body] POST https://cloudresourcemanager.googleapis.com/v1/projects/my-portfolio-a8a6e:testIamPermissions {"permissions":["firebase.projects.get","firebasehosting.sites.update"]}
+[debug] [2022-11-04T10:46:47.482Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-a8a6e [none]
+[debug] [2022-11-04T10:46:48.393Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-a8a6e 200
+[debug] [2022-11-04T10:46:48.396Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/my-portfolio-a8a6e {"projectId":"my-portfolio-a8a6e","projectNumber":"589758313656","displayName":"My Portfolio","name":"projects/my-portfolio-a8a6e","resources":{"hostingSite":"my-portfolio-a8a6e"},"state":"ACTIVE","etag":"1_918c533f-258c-485c-b7dd-47d6dfa50d58"}
+[debug] [2022-11-04T10:46:48.854Z] Error: Epic fail.
+    at prepareFrameworks (/Users/botshelotlhabanyane/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/frameworks/index.js:228:19)
+    at async deploy (/Users/botshelotlhabanyane/.cache/firebase/tools/lib/node_modules/firebase-tools/lib/deploy/index.js:53:13)
+[error] 
+[error] Error: An unexpected error has occurred.

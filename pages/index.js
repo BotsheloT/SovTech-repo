@@ -89,7 +89,7 @@ export default function Home() {
 
           <div className='text-lg text-gray-700 dark:text-gray-300'>
             <p>Ever since I was introduced to SovTech, my interest for the company has grown.
-            Through SovTech's Social Media, I have witnessed how seriously they take technology and its potential.            
+            Through Social Media, I have witnessed how seriously SovTech takes technology and its potential.            
             I truly believe that working at SovTech, I will be surrounded by like-minded developers who will allow me to advance in the IT fraternity of SovTech.</p>            
             <br/>
             <p>The inclusive and innovative nature of SovTech makes it the perfect environment for me to showcase and expand my knowledge
